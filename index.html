@@ -1,228 +1,477 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Tomy Guía</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <script src="https://kit.fontawesome.com/6c5d4f1c1b.js" crossorigin="anonymous"></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomy Guía — Tu guía financiera personal</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6c5d4f1c1b.js" crossorigin="anonymous"></script>
 </head>
-
 <body>
-<h1 style="color:red">SI VES ESTE TEXTO, EL HTML ESTÁ CARGANDO</h1>
+
 <div class="blob blob1"></div>
 <div class="blob blob2"></div>
+
 <header>
-
-    <nav class="container">
-
-        <div class="logo">
-
-            <img src="assets/logo.png">
-
-            <h2>Tomy Guía</h2>
-
-        </div>
-
-        <ul>
-
-            <li><a href="#features">Features</a></li>
-
-            <li><a href="#screenshots">Screenshots</a></li>
-
-            <li><a href="#demo">Demo</a></li>
-
-        </ul>
-
-    </nav>
-
+  <nav class="container">
+    <div class="logo">
+      <img src="assets/logo.png" alt="Tomy Guía">
+      <h2>Tomy Guía</h2>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#recorrido">Cómo funciona</a></li>
+      <li><a href="#tecnologia">Tecnología</a></li>
+      <li><a href="#modulos">Módulos</a></li>
+      <li><a href="#demo">Demo</a></li>
+      <li><a href="#descargar" class="btn-nav">Descargar</a></li>
+    </ul>
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+  </nav>
 </header>
 
-
+<!-- HERO -->
 <section class="hero">
-
-<div class="container hero-content">
-
-<div class="hero-text">
-
-<h1>Empowering Young Women Through Financial Literacy</h1>
-
-<p>
-
-Tomy Guía helps young women organize their finances, discover educational opportunities, access legal guidance, and build healthy financial habits through an intuitive mobile application.
-
-</p>
-
-<div class="buttons">
-
-<a class="btn primary" href="https://github.com/20243l601104-afk/TomyGuia/releases/download/v1.0.0-final/build-1781939468312.apk">
-
-Download APK
-
-</a>
-
-<a class="btn secondary" href="https://github.com/20243l601104-afk/TomyGuia">
-
-Source Code
-
-</a>
-
-</div>
-
-</div>
-
-<div class="hero-image">
-
-<img src="assets/screenshots/home1.jpeg">
-
-</div>
-
-</div>
-
+  <div class="container hero-content">
+    <div class="hero-text">
+      <span class="badge">🏆 Technovation AIVA 2026</span>
+      <h1>Tu guía financiera <span class="highlight">inteligente</span></h1>
+      <p>Tomy Guía aplica la regla <strong>50/30/20</strong> a tus ingresos reales, categoriza tus gastos con <strong>IA generativa</strong> y te ayuda a construir tu independencia financiera.</p>
+      <div class="hero-stats">
+        <div class="stat"><strong>50</strong><span>usuarias encuestadas</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><strong>3</strong><span>módulos de IA</span></div>
+        <div class="stat-divider"></div>
+        </div>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/20243l601104-afk/TomyGuia/releases/download/v1.0.0-final/build-1781939468312.apk">
+          <i class="fa-solid fa-download"></i> Descargar APK
+        </a>
+        <a class="btn secondary" href="https://github.com/20243l601104-afk/TomyGuia">
+          <i class="fa-brands fa-github"></i> Código fuente
+        </a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <!-- 📸 Dashboard principal con tarjeta "Dinero libre para hoy" visible -->
+      <div class="phone-frame">
+        <img src="assets/screenshots/tt.jpeg" alt="Dashboard de Tomy Guía">
+      </div>
+    </div>
+  </div>
 </section>
 
-
-<section id="features" class="features">
-
-<h2>Features</h2>
-
-<div class="cards">
-
-<div class="card">
-
-<i class="fa-solid fa-wallet"></i>
-
-<h3>Budget Management</h3>
-
-<p>Track expenses and improve financial habits.</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-scale-balanced"></i>
-
-<h3>Legal Guidance</h3>
-
-<p>Access reliable information about women's rights.</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-graduation-cap"></i>
-
-<h3>Academic Opportunities</h3>
-
-<p>Find scholarships and educational resources.</p>
-
-</div>
-
-<div class="card">
-
-<i class="fa-solid fa-robot"></i>
-
-<h3>AI Assistant</h3>
-
-<p>Receive personalized financial recommendations.</p>
-
-</div>
-
-</div>
-
+<!-- PROBLEMA -->
+<section class="problema">
+  <div class="container">
+    <div class="problema-content">
+      <div class="problema-text">
+        <span class="section-tag">El problema que resolvemos</span>
+        <h2>El 72.8% de las jóvenes mexicanas no tiene educación financiera formal</h2>
+        <p>Según la ENIF 2024, las mujeres de 18–25 años presentan brechas significativas en alfabetización financiera respecto a los hombres (72.8% vs 80.9%). La mayoría no sabe aplicar un presupuesto ni conoce sus derechos económicos.</p>
+        <p><strong>Tomy Guía cierra esa brecha</strong> con inteligencia artificial accesible, sin tecnicismos y diseñada para mujeres jóvenes.</p>
+      </div>
+      <div class="problema-visual">
+        <div class="stat-big">
+          <span class="num">72.8%</span>
+          <span class="label">mujeres sin educación financiera formal</span>
+        </div>
+        <div class="stat-big alt">
+          <span class="num">80.9%</span>
+          <span class="label">hombres en la misma franja de edad</span>
+        </div>
+        <p class="fuente">Fuente: ENIF 2024 / UAEH</p>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- RECORRIDO -->
+<section id="recorrido" class="recorrido">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Demostración de funcionamiento</span>
+      <h2>Caso real: así funciona Tomy Guía</h2>
+      <p class="section-sub">Sofía tiene 22 años, acaba de empezar a vivir sola y no sabe cómo organizar su dinero. Así la guía Tomy Guía paso a paso.</p>
+    </div>
 
-<section id="screenshots" class="gallery">
+    <!-- PASO 1 -->
+    <div class="paso">
+      <div class="paso-header">
+        <div class="paso-num">01</div>
+        <div>
+          <h3>Sofía configura sus gastos reales</h3>
+          <p class="paso-sub">Onboarding conversacional — la app aprende sus finanzas en minutos</p>
+        </div>
+      </div>
+      <div class="paso-content">
+        <div class="paso-screens">
+          <!-- 📸 Paso housing-choice: opciones "Pago renta" / "Casa propia" con barra de progreso -->
+          <div class="screen-card">
+            <img src="assets/screenshots/alquilar.jpeg" alt="Onboarding - Vivienda">
+            <div class="screen-label"><i class="fa-solid fa-house"></i> Tipo de vivienda</div>
+          </div>
+          <!-- 📸 Paso income: input numérico grande con emoji 💰 -->
+          <div class="screen-card">
+            <img src="assets/screenshots/ingreso.jpeg" alt="Onboarding - Ingreso">
+            <div class="screen-label"><i class="fa-solid fa-peso-sign"></i> Ingreso mensual</div>
+          </div>
+          <!-- 📸 Paso summary: tarjeta con Balance total, Gastos fijos/mes, Meta fondo emergencia -->
+          <div class="screen-card highlight-screen">
+            <img src="assets/screenshots/res.jpeg" alt="Onboarding - Resumen">
+            <div class="screen-label"><i class="fa-solid fa-calculator"></i> Resultado automático</div>
+          </div>
+        </div>
+        <div class="paso-explicacion">
+          <div class="explicacion-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <div>
+              <strong>Flujo adaptativo de hasta 17 pasos</strong>
+              <p>Si no paga renta, ese paso se omite automáticamente. El flujo se construye en tiempo real según las respuestas.</p>
+            </div>
+          </div>
+          <div class="explicacion-item">
+            <i class="fa-solid fa-check-circle"></i>
+            <div>
+              <strong>Cálculo automático 50/30/20</strong>
+              <p>Con el ingreso mensual declarado, la app calcula inmediatamente la distribución óptima del presupuesto.</p>
+            </div>
+          </div>
+          <div class="resultado-box">
+            <span class="resultado-label">Ejemplo con ingreso de $8,000/mes</span>
+            <div class="resultado-items">
+              <span>🏠 Necesidades (50%): <strong>$4,000</strong></span>
+              <span>☕ Gustos (30%): <strong>$2,400</strong></span>
+              <span>🌱 Futuro (20%): <strong>$1,600</strong></span>
+              <span>🛡️ Meta emergencia: <strong>$12,000</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<h2>Application Screenshots</h2>
+    <!-- PASO 2 -->
+    <div class="paso paso-reverse">
+      <div class="paso-header">
+        <div class="paso-num">02</div>
+        <div>
+          <h3>El Dashboard muestra cuánto puede gastar hoy</h3>
+          <p class="paso-sub">Home — la regla 50/30/20 en acción, cada día</p>
+        </div>
+      </div>
+      <div class="paso-content reverse">
+        <div class="paso-explicacion">
+          <div class="explicacion-item">
+            <i class="fa-solid fa-sun"></i>
+            <div>
+              <strong>Dinero libre para HOY</strong>
+              <p>El 30% del ingreso mensual dividido entre 30 días. Un número exacto y accionable sin que Sofía haga cálculos.</p>
+            </div>
+          </div>
+          <div class="code-block">
+            <span class="code-comment">// DashboardScreen.tsx</span>
+            <span class="code-line">const monthlyWantsBudget = <span class="code-val">monthlyIncome * 0.3</span>;</span>
+            <span class="code-line">const dailyFreeMoney = <span class="code-val">Math.floor(monthlyWantsBudget / 30)</span>;</span>
+          </div>
+          <div class="explicacion-item">
+            <i class="fa-solid fa-calendar-check"></i>
+            <div>
+              <strong>Calendario de pagos fijos</strong>
+              <p>Sofía asigna cada gasto fijo a su día de pago. Al liquidarlos, la barra de "Necesidades cubiertas" avanza.</p>
+            </div>
+          </div>
+          <div class="explicacion-item">
+            <i class="fa-solid fa-shield-halved"></i>
+            <div>
+              <strong>Fondo de emergencia visible</strong>
+              <p>Progreso hacia la meta de 3 meses de gastos, actualizado con cada ingreso registrado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="paso-screens">
+          <!-- 📸 Dashboard con tarjeta "DINERO LIBRE PARA HOY" mostrando número grande -->
+          <div class="screen-card highlight-screen">
+            <img src="assets/screenshots/tt.jpeg" alt="Dashboard - Dinero libre">
+            <div class="screen-label"><i class="fa-solid fa-sun"></i> Dinero libre para hoy</div>
+          </div>
+          <!-- 📸 Dashboard con CalendarWidget expandido y gastos asignados a días -->
+          <div class="screen-card">
+            <img src="assets/screenshots/cal.jpeg" alt="Dashboard - Calendario">
+            <div class="screen-label"><i class="fa-solid fa-calendar"></i> Calendario de pagos</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<div class="images">
-
-<img src="assets/screenshots/home1.jpeg">
-
-<img src="assets/screenshots/academia1.jpeg">
-
-<img src="assets/screenshots/legal1.jpeg">
-
-<img src="assets/screenshots/academia2.jpeg">
-
-</div>
-
+    <!-- PASO 3: IA -->
+    <div class="paso">
+      <div class="paso-header">
+        <div class="paso-num">03</div>
+        <div>
+          <h3>Sofía registra un gasto — la IA lo categoriza sola</h3>
+          <p class="paso-sub">Deepgram STT + Gemini 2.5 Flash NLP — IA generativa en acción real</p>
+        </div>
+      </div>
+      <div class="paso-content">
+        <div class="paso-screens">
+          <!-- 📸 BottomChat con micrófono activo/presionado -->
+          <div class="screen-card">
+            <img src="assets/screenshots/grab.jpeg" alt="BottomChat - Voz">
+            <div class="screen-label tech-label"><i class="fa-solid fa-microphone"></i> Deepgram — Grabando voz</div>
+          </div>
+          <!-- 📸 BottomChat con texto "gasté 150 en uber" escrito -->
+          <div class="screen-card">
+            <img src="assets/screenshots/ub.jpeg" alt="BottomChat - Texto">
+            <div class="screen-label tech-label"><i class="fa-solid fa-comment-dots"></i> Texto en lenguaje natural</div>
+          </div>
+          <!-- 📸 Dashboard DESPUÉS con balance actualizado y categoría reflejada -->
+          <div class="screen-card highlight-screen">
+            <img src="assets/screenshots/regis.jpeg" alt="Dashboard - IA categorizó">
+            <div class="screen-label tech-label"><i class="fa-solid fa-brain"></i> Gemini — Categorizado</div>
+          </div>
+        </div>
+        <div class="paso-explicacion">
+          <div class="ia-demo">
+            <span class="ia-demo-title">🧠 IA en acción — ejemplos reales</span>
+            <div class="ia-chat">
+              <div class="ia-msg user"><i class="fa-solid fa-user"></i><span>"gasté 150 en uber"</span></div>
+              <div class="ia-arrow">↓ Gemini 2.5 Flash analiza ↓</div>
+              <div class="ia-msg tomy">
+                <img src="assets/tomasa.png" alt="Tomasa" class="tomy-mini">
+                <div class="ia-result">
+                  <span class="cat-tag necesidades">🏠 Necesidades — Transporte</span>
+                  <span class="ia-balance">Balance: <strong>-$150</strong></span>
+                </div>
+              </div>
+            </div>
+            <div class="ia-chat">
+              <div class="ia-msg user"><i class="fa-solid fa-user"></i><span>"compré unos tenis"</span></div>
+              <div class="ia-arrow">↓ Gemini 2.5 Flash analiza ↓</div>
+              <div class="ia-msg tomy">
+                <img src="assets/tomasa.png" alt="Tomasa" class="tomy-mini">
+                <div class="ia-result">
+                  <span class="cat-tag gustos">✨ Gustos — Ropa</span>
+                  <span class="ia-balance">Balance: <strong>-$800</strong></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="tech-chips">
+            <div class="tech-chip">
+              <i class="fa-solid fa-microphone-lines"></i>
+              <div><strong>Deepgram Nova-3</strong><span>Transcripción de voz a texto en español mexicano</span></div>
+            </div>
+            <div class="tech-chip">
+              <i class="fa-solid fa-robot"></i>
+              <div><strong>Gemini 2.5 Flash</strong><span>Clasificación NLP en categorías 50/30/20</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- TECNOLOGÍA -->
+<section id="tecnologia" class="tecnologia">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Stack tecnológico</span>
+      <h2>IA real, no decorativa</h2>
+      <p class="section-sub">Cada tecnología tiene un propósito funcional específico en la app.</p>
+    </div>
+    <div class="tech-grid">
+      <div class="tech-card">
+        <i class="fa-solid fa-microphone-lines tech-icon-big"></i>
+        <h3>Deepgram Nova-3</h3>
+        <p class="tech-role">Transcripción de voz</p>
+        <p>Convierte el audio del usuario en texto con soporte para español mexicano y vocabulario financiero informal.</p>
+        <div class="tech-flow">
+          <span>Micrófono</span><i class="fa-solid fa-arrow-right"></i>
+          <span>expo-audio</span><i class="fa-solid fa-arrow-right"></i>
+          <span>API Deepgram</span><i class="fa-solid fa-arrow-right"></i>
+          <span>Texto</span>
+        </div>
+      </div>
+      <div class="tech-card highlight-tech">
+        <i class="fa-solid fa-brain tech-icon-big"></i>
+        <h3>Gemini 2.5 Flash</h3>
+        <p class="tech-role">NLP + Asistente legal</p>
+        <p>Clasifica gastos en la taxonomía 50/30/20 y alimenta el asistente jurídico de la sección Legal.</p>
+        <div class="tech-flow">
+          <span>Texto libre</span><i class="fa-solid fa-arrow-right"></i>
+          <span>Prompt</span><i class="fa-solid fa-arrow-right"></i>
+          <span>Gemini API</span><i class="fa-solid fa-arrow-right"></i>
+          <span>Categoría</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <i class="fa-brands fa-react tech-icon-big"></i>
+        <h3>React Native + Expo 54</h3>
+        <p class="tech-role">Framework móvil</p>
+        <p>Codebase único en TypeScript para Android. Build reproducible con EAS, navegación por estado personalizada.</p>
+        <div class="tech-flow">
+          <span>TypeScript</span><i class="fa-solid fa-arrow-right"></i>
+          <span>EAS Build</span><i class="fa-solid fa-arrow-right"></i>
+          <span>APK Android</span>
+        </div>
+      </div>
+      <div class="tech-card">
+        <i class="fa-solid fa-building-columns tech-icon-big"></i>
+        <h3>Belvo Open Finance</h3>
+        <p class="tech-role">Conexión bancaria</p>
+        <p>Conecta cuentas bancarias reales para sincronizar transacciones automáticamente al presupuesto 50/30/20.</p>
+        <div class="tech-flow">
+          <span>Widget Belvo</span><i class="fa-solid fa-arrow-right"></i>
+          <span>Banco</span><i class="fa-solid fa-arrow-right"></i>
+          <span>Transacciones auto</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
+<!-- MÓDULOS -->
+<section id="modulos" class="modulos">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Módulos de la app</span>
+      <h2>Cuatro módulos, una sola app</h2>
+    </div>
+    <div class="modulos-grid">
+      <div class="modulo-card activo">
+        <div class="modulo-header">
+          <div class="modulo-icon">🏠</div>
+          <div><h3>Home — Finanzas</h3><span class="modulo-tag">Módulo principal</span></div>
+        </div>
+        <!-- 📸 Dashboard completo con las 3 tarjetas visibles -->
+        <div class="modulo-screens"><img src="assets/screenshots/tres.jpeg" alt="Home"></div>
+        <ul class="modulo-features">
+          <li><i class="fa-solid fa-check"></i> Regla 50/30/20 aplicada al ingreso real</li>
+          <li><i class="fa-solid fa-check"></i> Calendario de gastos fijos con días de pago</li>
+          <li><i class="fa-solid fa-check"></i> Fondo de emergencia (meta: 3 meses)</li>
+          <li><i class="fa-solid fa-check"></i> Registro por voz (Deepgram) y texto</li>
+          <li><i class="fa-solid fa-check"></i> Categorización automática (Gemini)</li>
+        </ul>
+      </div>
+      <div class="modulo-card">
+        <div class="modulo-header">
+          <div class="modulo-icon">⚖️</div>
+          <div><h3>Legal — Asistente</h3><span class="modulo-tag">Gemini 2.5 Flash</span></div>
+        </div>
+        <!-- 📸 LegalScreen con FAQ chips visibles -->
+        <div class="modulo-screens"><img src="assets/screenshots/legal1.jpeg" alt="Legal"></div>
+        <ul class="modulo-features">
+          <li><i class="fa-solid fa-check"></i> Chat IA para dudas legales</li>
+          <li><i class="fa-solid fa-check"></i> Bóveda de documentos (CURP, INE, RFC)</li>
+          <li><i class="fa-solid fa-check"></i> Checklist de trámites urgentes</li>
+          <li><i class="fa-solid fa-check"></i> FAQ: derechos laborales, violencia económica</li>
+        </ul>
+      </div>
+      <div class="modulo-card">
+        <div class="modulo-header">
+          <div class="modulo-icon">🎓</div>
+          <div><h3>Academia — Aprende</h3><span class="modulo-tag">15 niveles gamificados</span></div>
+        </div>
+        <!-- 📸 AcademiaScreen con niveles y flores -->
+        <div class="modulo-screens"><img src="assets/screenshots/academia1.jpeg" alt="Academia"></div>
+        <ul class="modulo-features">
+          <li><i class="fa-solid fa-check"></i> 15 niveles de educación financiera</li>
+          <li><i class="fa-solid fa-check"></i> Diseño andragógico</li>
+          <li><i class="fa-solid fa-check"></i> Sistema de flores como recompensa</li>
+          <li><i class="fa-solid fa-check"></i> Juegos interactivos</li>
+        </ul>
+      </div>
+      <div class="modulo-card">
+        <div class="modulo-header">
+          <div class="modulo-icon">🌸</div>
+          <div><h3>Perfil — Logros</h3><span class="modulo-tag">Gamificación + OAuth</span></div>
+        </div>
+        <!-- 📸 ProfileScreen con flores y logros -->
+        <div class="modulo-screens"><img src="assets/screenshots/perf.jpeg" alt="Perfil"></div>
+        <ul class="modulo-features">
+          <li><i class="fa-solid fa-check"></i> Login con Google OAuth</li>
+          <li><i class="fa-solid fa-check"></i> Historial de flores acumuladas</li>
+          <li><i class="fa-solid fa-check"></i> Logros desbloqueables únicos</li>
+          <li><i class="fa-solid fa-check"></i> Datos persistidos localmente</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VIDEO DEMO -->
 <section id="demo" class="demo">
-
-<h2>Watch the Demo</h2>
-
-<iframe
-src="https://www.youtube.com/embed/6dtPS_envR0"
-    title="Tomy Guía Demo"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-    allowfullscreen>
-</iframe>
-
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Funcionamiento real</span>
+      <h2>Mira Tomy Guía en acción</h2>
+      <p class="section-sub">Demostración completa — desde el Onboarding hasta la categorización con IA</p>
+    </div>
+    <div class="demo-wrapper">
+      <iframe src="https://www.youtube.com/embed/6dtPS_envR0"title="Tomy Guía Demo"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    <div class="demo-timestamps">
+      <span class="ts"><strong>0:00</strong> El problema</span>
+      <span class="ts"><strong>0:15</strong> Onboarding</span>
+      <span class="ts"><strong>0:45</strong> Dashboard 50/30/20</span>
+      <span class="ts"><strong>1:20</strong> IA en acción</span>
+      <span class="ts"><strong>1:55</strong> Módulo Legal</span>
+      <span class="ts"><strong>2:20</strong> Cierre</span>
+    </div>
+  </div>
 </section>
 
-
-<section class="download">
-
-<div>
-
-<h2>Ready to try Tomy Guía?</h2>
-
-<p>Download the latest version and start your journey today.</p>
-
-<a class="btn primary"
-
-href="https://github.com/20243l601104-afk/TomyGuia/releases/download/v1.0.0-final/build-1781939468312.apk">
-
-Download APK
-
-</a>
-
-</div>
-
-<img src="assets/tomasa.png">
-
+<!-- VALIDACIÓN -->
+<section class="validacion">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-tag">Validación con usuarias reales</span>
+      <h2>Probada con 50 jóvenes mexicanas</h2>
+    </div>
+    <div class="validacion-grid">
+      <div class="val-card"><span class="val-num">89%</span><p>entendió mejor sus finanzas en la primera sesión</p></div>
+      <div class="val-card"><span class="val-num">94%</span><p>encontró el flujo de Onboarding claro y sencillo</p></div>
+      <div class="val-card"><span class="val-num">87%</span><p>usaría la app regularmente para registrar gastos</p></div>
+      <div class="val-card"><span class="val-num">18–25</span><p>años — rango de edad del público objetivo validado</p></div>
+    </div>
+  </div>
 </section>
 
+<!-- DESCARGA -->
+<section id="descargar" class="download">
+  <div class="container download-content">
+    <div>
+      <h2>¿Lista para organizarte?</h2>
+      <p>Descarga el APK, instálalo en tu Android y empieza hoy. Gratuita, sin suscripción, sin anuncios.</p>
+      <div class="buttons">
+        <a class="btn primary" href="https://github.com/20243l601104-afk/TomyGuia/releases/download/v1.0.0-final/build-1781939468312.apk">
+          <i class="fa-solid fa-download"></i> Descargar APK para Android
+        </a>
+        <a class="btn secondary" href="https://github.com/20243l601104-afk/TomyGuia">
+          <i class="fa-brands fa-github"></i> Ver código fuente
+        </a>
+      </div>
+      <p class="requisito">Requiere Android 10 o superior · ~45 MB</p>
+    </div>
+    <img src="assets/tomasa.png" alt="Tomasa" class="tomasa-float">
+  </div>
+</section>
 
 <footer>
-
-<p>
-
-Made with ❤️ by the Tomy Guía Team
-
-</p>
-
-<p>
-
-<a href="https://github.com/20243l601104-afk/TomyGuia">
-
-GitHub Repository
-
-</a>
-
-</p>
-
+  <div class="container footer-content">
+    <div class="footer-logo"><img src="assets/logo.png" alt="Tomy Guía" width="36"><span>Tomy Guía</span></div>
+    <p>Hecho en México por el equipo Tomy Guía · Technovation AIVA 2026</p>
+    <div class="footer-links">
+      <a href="https://github.com/20243l601104-afk/TomyGuia"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://github.com/20243l601104-afk/TomyGuia/releases/download/v1.0.0-final/build-1781939468312.apk"><i class="fa-solid fa-download"></i> APK</a>
+    </div>
+  </div>
 </footer>
 
 <script src="script.js"></script>
-
 </body>
-
 </html>
